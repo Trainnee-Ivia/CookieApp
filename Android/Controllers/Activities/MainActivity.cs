@@ -22,7 +22,7 @@ using Domain.Mobile.Entities;
 
 namespace Android.Controllers.Activities
 {
-    [Activity(Label = "Cookeriat", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme")]
+    [Activity(Label = "Cookeria", Theme = "@style/MyTheme")]
     public class MainActivity : AppCompatActivity
     {
 
@@ -49,12 +49,12 @@ namespace Android.Controllers.Activities
             // Verificar o estado do Bundle
                 VerifyBundle(bundle);
 
-            var produtoRepository = new Repository<Produto>("api/produtos/");
+            /*var produtoRepository = new Repository<Produto>("api/produtos/");
             var produtos = produtoRepository.GetAll();
             foreach (var item in produtos)
             {
                 Toast.MakeText(this, "Id: " + item.Id + " Nome: " + item.Nome, ToastLength.Short).Show();
-            }
+            }*/
 
         }
 
@@ -82,6 +82,7 @@ namespace Android.Controllers.Activities
         {
             mFragmentTransaction = SupportFragmentManager.BeginTransaction();
             mFragmentTransaction.Add(Resource.Id.left_drawer, new LeftDrawerFragment());
+            //mFragmentTransaction.Add(Resource.Id.fragmentContainer, new LoginFragment());
             mFragmentTransaction.Commit();
 
             mDrawerToggle = new MyActionBarToggle(

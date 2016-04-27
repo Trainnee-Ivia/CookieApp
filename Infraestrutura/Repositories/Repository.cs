@@ -55,7 +55,8 @@ namespace Infraestrutura.Repositories
 
         public T GetSingle(int id)
         {
-            var request = new RestRequest(RestRequest + "/{id}", Method.GET);
+            var request = new RestRequest(RestRequest + "/{id}", Method.GET );
+            //request.AddHeader("Authorization", "Bearer ")
             request.AddParameter("id", id);
             string Json = client.Execute(request).Content;
 

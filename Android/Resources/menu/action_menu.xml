@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:myapp="http://schemas.android.com/apk/res-auto">
 
-  <!--   <item android:id="@+id/action"
+  <!-- <item android:id="@+id/action"
         android:title="Action 1"
-        android:showAsAction="never"/> -->
+        android:showAsAction="never"/>  -->
 </menu>

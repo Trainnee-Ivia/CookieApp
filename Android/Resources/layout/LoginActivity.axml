@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FED136">
+        <ImageView
+            android:id="@+id/imageLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/cookie"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+        <EditText
+            android:id="@+id/loginEdit"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:hint="Login"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" />
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/loginEdit"
+            android:background="#b2b2b2"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:hint="Senha"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/loginEdit"
+            android:background="#FFFFFF"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Logar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEdit"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@id/btnCadastro" />
+        <Button
+            android:id="@+id/btnCadastro"
+            android:text="Cadastrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/passwordEdit" />
+    </RelativeLayout>
+</ScrollView>
