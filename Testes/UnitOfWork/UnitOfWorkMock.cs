@@ -18,6 +18,14 @@ namespace Testes.UnitOfWork
         public IRepository<PontoDeVenda> PontosDeVenda { get; private set; }
         public IRepository<Produto> Produtos { get; private set; }
 
+        IRepository<Lote> IUnitOfWork.Lotes
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public UnitOfWorkMock()
         {
             Produtos = new RepositoryMock<Produto>();

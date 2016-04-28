@@ -15,10 +15,21 @@ namespace Android.Controllers.Activities
     [Activity(Label = "LetsCookie", MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.Black.NoTitleBar.Fullscreen")]
     public class LoginActivity : Activity
     {
+        private Button _btnEntrar;
+        private EditText _editLogin;
+        private EditText _editSenha;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.LoginActivity);
+            
+
+        }
+
+        private void setupUI()
+        {
+
         }
     }
 }
